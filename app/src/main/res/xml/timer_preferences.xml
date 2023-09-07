@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="enable_sound"
+        android:summaryOff="Now sound is disabled"
+        android:summaryOn="Now sound is enabled"
+        android:title="Enable sound" />
+
+    <ListPreference
+        android:defaultValue="bell"
+        android:entries="@array/pref_timer_melody_labels"
+        android:entryValues="@array/pref_timer_melody_values"
+        android:key="timer_melody"
+        android:title="Timer melody" />
+
+    <EditTextPreference
+        android:inputType="numberDecimal"
+        android:digits="0123456789"
+        android:defaultValue="5"
+        android:key="default_interval"
+        android:title="Timer default interval" />
+
+</PreferenceScreen>
